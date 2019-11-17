@@ -37,7 +37,9 @@ class Mate_lampu():
             if type=='wa':
                 self.tolol = 'phone_number'
                 self.goblok=str(input('[?] Nomor Whatsappnya?: '))
-   
+            elif type=='email':
+                self.tolol = 'email'
+                self.goblok=str(input('[?] email: '))
             else:
                 Mate_lampu()
             self.spam_kuy()
