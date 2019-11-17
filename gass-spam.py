@@ -1,4 +1,13 @@
 #-*- coding: utf8 -*-
+import requests,random,time,os,sys
+req=requests.Session()
+
+r='\1[1m'
+c='\1[1m'
+w='\1[1m'
+
+__banner__ = ('''
+  BANYAKIN SPAM BIAR MAMPUS :V
 #SPAM WHATSAP BIAR NGELAG
 #KHUSUS YANG JOMBLO
 #SEMOGA DOSA ANDA BERLIMPAH
@@ -8,19 +17,10 @@
 #JANGAN LUPA BERSYUKUR
 #DONASI VIA PULSA DONK,089627810867,MAKACIH 😂🤣
 #KONTAK PEMBUAT Whatsap 089627810867
-
-import requests,random,time,os,sys
-req=requests.Session()
-
-r='\1[1d'
-c='\1[1d'
-w='\1[1d'
-
-__banner__ = ('''
-  BANYAKIN SPAM BIAR MAMPUS :V
-%s ###############################
+%s
+ ###############################
  # %scode : Alex             %s#
- # %stype? : wa/email             %s#
+ # %stype : wa/email             %s#
  # %steam : CodeBAlex            %s#
  ###############################%s
     ''' % (c,w,c,w,c,w,c,w))
