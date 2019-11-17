@@ -7,7 +7,7 @@ c='\1[1m'
 w='\1[1m'
 
 __banner__ = ('''
-  BANYAKIN SPAM BIAR MAMPUS :V
+#BANYAKIN SPAM BIAR MAMPUS :V
 #SPAM WHATSAP BIAR NGELAG
 #KHUSUS YANG JOMBLO
 #SEMOGA DOSA ANDA BERLIMPAH
@@ -45,17 +45,17 @@ class Mate_lampu():
             self.spam_kuy()
 
         def spam_kuy(self):
-            saapa=int(input('[?] jumlh: '))
-            print('[!] delay 4 menit :V')
+            saapa=int(input('[?] jumlah Spam: '))
+            print('[!] Delay 2 Detik Bos :V')
             for i in range(1,saapa+1):
                 req.headers.update({'user-agent':random.choice(self.ua)});ceko = req.post('https://core.ktbs.io/v2/user/registration/temp', json = {'full_name':'Maoundis','user_id':self.goblok,'user_id_type':self.tolol})
                 if ceko.status_code == 200:
-                    print('  %s[%d] pesan: %ssuskes nyepam gan hehe :"c ' % (w,i,c))
+                    print('  %s[%d] pesan: %Berhasil Melakukan Spam (By CodeBAlex) :"c ' % (w,i,c))
                 else:
                     print('  %s[%d] pesan: %s%s' % (w,i,r,ceko.json()['errors'][0]['details']['id']))
-                time.sleep(240)
+                time.sleep(2)
                 continue
-            quit('%s[%s#%s]%s selsai ,,,,' % (r,c,r,w))
+            quit('%s[%s#%s]%s Selesai Bos,Jangan Lupa Berikan Donasi Ya😂 ,,,,' % (r,c,r,w))
 
 
 
