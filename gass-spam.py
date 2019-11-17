@@ -46,16 +46,16 @@ class Mate_lampu():
 
         def spam_kuy(self):
             saapa=int(input('[?] jumlh: '))
-            print('[!] DIBUAT CEPAT TANPA DELAY😂')
-            for i in range(saapa):
-                req.headers.update({'user-agent':random.choice(self.ua)});ceko = req.post('https://core.ktbs.io/v2/user/registration/temp', json = {'full_name':'Alex','user_id':self.goblok,'user_id_type':self.tolol})
+            print('[!] delay 4 menit :V')
+            for i in range(1,saapa+1):
+                req.headers.update({'user-agent':random.choice(self.ua)});ceko = req.post('https://core.ktbs.io/v2/user/registration/temp', json = {'full_name':'Maoundis','user_id':self.goblok,'user_id_type':self.tolol})
                 if ceko.status_code == 200:
-                    print('  %s[%d] pesan: %Berhasil Mengirim Chat Spam :"c ' % (w,i,c))
+                    print('  %s[%d] pesan: %ssuskes nyepam gan hehe :"c ' % (w,i,c))
                 else:
                     print('  %s[%d] pesan: %s%s' % (w,i,r,ceko.json()['errors'][0]['details']['id']))
-                time.sleep(1)
+                time.sleep(240)
                 continue
-            quit('%s[%s#%s]%s Spam Berhasil Dilakukan,Jangan Lupa Berikan Donasi😂😂 ,,,,' % (r,c,r,w))
+            quit('%s[%s#%s]%s selsai ,,,,' % (r,c,r,w))
 
 
 
